@@ -1,0 +1,11 @@
+---
+- hosts: all
+
+  vars:
+    # Open LDAP Configuration
+    openldap_server_domain_name: dhcpawn.net
+    openldap_server_rootpw: dhcpawn
+    openldap_server_enable_ssl: false
+
+  roles:
+    - dhcpd-ldap
